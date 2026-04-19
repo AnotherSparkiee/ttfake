@@ -1,7 +1,7 @@
 import { Info } from 'lucide-react';
 import { InfoIcon } from '@/app/components/InfoIcon';
 import { useState, useRef } from 'react';
-import exampleImage from 'figma:asset/f61058c7430513bbf3c9e3419fcefa64f5a70085.png';
+import previewImage from '@/imports/preview.jpg';
 import playIcon from 'figma:asset/d877f25f9c8cae23cec8dae0b7d775c94661604a.png';
 
 export function RetentionSection() {
@@ -142,6 +142,7 @@ export function RetentionSection() {
             playsInline
             muted
             preload="metadata"
+            poster={previewImage}
             onTimeUpdate={handleTimeUpdate}
             onLoadedMetadata={handleLoadedMetadata}
             onError={(e) => {
