@@ -129,12 +129,12 @@ export function RetentionSection() {
       </div>
       
       <p className="text-neutral-400 text-sm mb-4">
-        Большинство зрителей прекратили смотреть это видео на отметке 0:18. Узнайте, с какого омента бьшинство зрителей потеряли интерес к вашему видео.
+        Большинство зрителей прекратили смотреть это видео на отметке 0:18. Узнайте, с какого момента большинство зрителей потеряли интерес к вашему видео.
       </p>
       
       {/* Video Preview */}
       <div className="relative mb-6">
-        <div className="relative w-full max-w-[155px] mx-auto aspect-[10/16]">
+        <div className="relative w-full max-w-[155px] mx-auto aspect-[11/16]">
           <video
             ref={videoRef}
             className="w-full h-full object-cover bg-black rounded-[5px]"

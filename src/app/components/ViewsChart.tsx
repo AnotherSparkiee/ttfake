@@ -50,15 +50,13 @@ export function ViewsChart() {
   const fourthLineY = getY(0); // Нижняя сплошная линия на уровне 0
 
   // Создаем путь для линии
-  const linePath =
-    viewsData
-      .map((d, i) => {
-        const x = getX(i);
-        const y = getY(d.views);
-        return i === 0 ? `M ${x} ${y}` : `L ${x} ${y}`;
-      })
-      .join(" ") +
-    ` L ${getX(viewsData.length - 1)} ${fourthLineY}`;
+  const linePath = viewsData
+    .map((d, i) => {
+      const x = getX(i);
+      const y = getY(d.views);
+      return i === 0 ? `M ${x} ${y}` : `L ${x} ${y}`;
+    })
+    .join(" ");
 
   // Содаем путь для заливки под линией
   const fillPath =

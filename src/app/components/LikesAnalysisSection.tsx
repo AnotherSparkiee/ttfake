@@ -132,7 +132,7 @@ export function LikesAnalysisSection() {
       
       {/* Video Preview */}
       <div className="relative mb-6">
-        <div className="relative w-full max-w-[155px] mx-auto aspect-[10/16]">
+        <div className="relative w-full max-w-[155px] mx-auto aspect-[11/16]">
           <video
             ref={videoRef}
             className="w-full h-full object-cover bg-black rounded-[5px]"
